@@ -20,17 +20,38 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
   padding-left: 100px;
   padding-right:100px;
   font-style: bold;
-  font-size: 60px;
   font-family: "Impact";
   line-height: 1.2;
+  font-size:5vw
   
 }
-
+/*
 .subtitle {
   font-size: 12px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 100px;
   padding-right:100px;
+}
+*/
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+  @media screen and (min-width: 601px) {
+  .subtitle {
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+    padding-right:100px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+    padding-right:100px;
+  }
 }
 
 .space{
@@ -58,8 +79,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
 <body bgcolor="#FFFCF9">
   <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
     <div class="space"></div>
-    <a href="javascript:void(0)" onclick="w3_close()"
-    class="w3-bar-item w3-button">Close Menu</a>
     <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Learn C</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
   </nav>
@@ -68,7 +87,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
     <div class="w3-center w3-padding-16 heading">Shikshya</div>
   </div>
   <div class="space"></div>
-  <div class="w3-right"><img src="img.png"></div>
+  <div class="w3-right"><img src="img.png" style="max-width:100%;height:auto;"></div>
   <div class="space2"></div>
   <div>
     <div class="headline">Tapai lai C ma Marks Improve Garna mann laageko cha?</div>
@@ -85,8 +104,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
 
 <script>
   // Script to open and close sidebar
+
+  
+
   function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
+    if(document.getElementById("mySidebar").style.display == "none") {
+      document.getElementById("mySidebar").style.display = "block";
+    } else {
+      document.getElementById("mySidebar").style.display = "none"
+    }
   }
    
   function w3_close() {
