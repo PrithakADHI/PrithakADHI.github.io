@@ -1,6 +1,11 @@
 
         .w3-bar-block .w3-bar-item {padding:20px}
         
+body {
+padding-bottom: 50px;
+}
+
+
         .heading {
           font-style: bold;
           font-size: 32px;
