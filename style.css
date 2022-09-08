@@ -135,3 +135,18 @@ pre{
     border: 2px solid rgb(252, 119, 83);
 
 }
+
+@media screen and (min-width: 601px) {
+  .code {
+    padding-left: 25px;
+    padding-right: 250px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .code {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
