@@ -1,15 +1,15 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
+
         .w3-bar-block .w3-bar-item {padding:20px}
         
         .heading {
           font-style: bold;
-          font-size: 35px;
-          padding-right: 50px;
+          font-size: 32px;
+          padding-right: 25px;
         }
         
         .headline {
-          padding-left: 50px;
-          padding-right:100px;
+          padding-left: 25px;
+          padding-right:25px;
           font-style: bold;
           font-family: "Anton";
           line-height: 1.2;
@@ -18,7 +18,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
         
         @media screen and (max-width: 1189px) {
           .headline {
-            font-size: 5vw;
+            font-size: 7vw;
           }
         }
         
@@ -35,10 +35,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
         /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
           @media screen and (min-width: 601px) {
           .subtitle {
-            font-size: 24px;
+            font-size: 20px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding-left: 50px;
-            padding-right:100px;
+            padding-left: 25px;
+            padding-right:250px;
           }
         }
         
@@ -47,8 +47,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Papyrus"}
           .subtitle {
             font-size: 16px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding-left: 50px;
-            padding-right:100px;
+            padding-left: 25px;
+            padding-right:25px;
           }
         }
         
@@ -102,12 +102,16 @@ a:active {
 .topic{
   font-size: 30px;
   font-family: "Anton";
-  padding-left: 50px;
-  padding-right:50px;
+  padding-left: 25px;
+  padding-right:25px;
 }
 
 .space4{
   padding-top: 1em;
+}
+
+.space5{
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 601px) {
@@ -123,4 +127,11 @@ a:active {
     font-size: 16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
+}
+
+
+pre{
+    border-radius: 25px;
+    border: 2px solid rgb(252, 119, 83);
+
 }
