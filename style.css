@@ -1,0 +1,199 @@
+
+        .w3-bar-block .w3-bar-item {padding:20px}
+        
+        html {
+          scroll-behavior: smooth;
+        }
+
+        body {
+          padding-bottom: 50px;
+        }
+
+        .heading {
+          font-style: bold;
+          font-size: 32px;
+          padding-right: 25px;
+        }
+        
+        .headline {
+          padding-left: 25px;
+          padding-right:25px;
+          font-style: bold;
+          font-family: "Anton";
+          line-height: 1.2;
+          font-size:60px; 
+        }
+        
+        @media screen and (max-width: 1189px) {
+          .headline {
+            font-size: 7vw;
+          }
+        }
+        
+        
+        /*
+        .subtitle {
+          font-size: 12px;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          padding-left: 100px;
+          padding-right:100px;
+        }
+        */
+        
+        /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+          @media screen and (min-width: 601px) {
+          .subtitle {
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 25px;
+            padding-right:250px;
+          }
+        }
+        
+        /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 600px) {
+          .subtitle {
+            font-size: 16px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 25px;
+            padding-right:25px;
+          }
+        }
+        
+        .space{
+          padding-bottom: 75px;
+        }
+        
+        .space2{
+          padding-bottom: 150px;
+        }
+        
+        .space3{
+          padding-bottom: 80px;
+        }
+
+        .size {
+          font-size: 35px;
+        }
+        
+        .navbar{
+          background-color: rgb(6, 214, 160);
+          z-index: 10000;
+           position: fixed;
+           top: 0px;
+           width: 100%;
+        }
+
+ul {
+  padding-left: 5em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: #219ebc;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(252, 119, 83);
+}
+
+a:hover {
+  text-decoration: none;
+  color:rgb(6, 214, 160);
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  transition: all .4s cubic-bezier(0,.5,0,1);
+}
+
+.topic{
+  font-size: 30px;
+  font-family: "Anton";
+  padding-left: 25px;
+  padding-right:25px;
+}
+
+.space4{
+  padding-top: 1em;
+}
+
+.space5{
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 601px) {
+  .list {
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .list {
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+
+pre{
+    border-radius: 25px;
+    border: 2px solid rgb(252, 119, 83);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+
+}
+
+@media screen and (min-width: 601px) {
+  .code {
+    padding-left: 25px;
+    padding-right: 250px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .code {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+a.button {
+  background-color: rgb(6, 214, 160);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button:hover {
+  background-color: #3674a9;
+}
+
+
+@media screen and (min-width: 601px) {
+  .video {
+    aspect-ratio: 16 / 9;
+    width: 25%;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .video {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+  }
+}
